@@ -5,12 +5,12 @@
   "version": "0.1",
   "author": "devsteder",
   "permissions": [
-    "storage",
     "activeTab"
   ],
   "content_scripts": [
     {
       "matches": [
+        "http://scoresaber.com/u/*",
         "https://scoresaber.com/u/*"
       ],
       "css": [
