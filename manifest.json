@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "BeastSaber Links",
+  "description": "Add links to bsaber.com so you can rate songs based on your scoresaber user profile.",
+  "version": "0.1",
+  "author": "devsteder",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://scoresaber.com/u/*"
+      ],
+      "css": [
+        "beastsaber-ext.css"
+      ],
+      "js": ["scoreSaber.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}
